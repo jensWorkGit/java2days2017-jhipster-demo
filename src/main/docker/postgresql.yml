@@ -1,0 +1,11 @@
+version: '2'
+services:
+    java2days-postgresql:
+        image: postgres:9.6.5
+        # volumes:
+        #     - ~/volumes/jhipster/java2days/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=java2days
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
